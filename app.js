@@ -25,8 +25,8 @@ specEl.textContent = 'Karak';
 ulEls = document.querySelector('#cafe-specialties');
 ulEls.append(specEl);
 // part7
-const blogPost = document.createElement('div');
-blogPost.classList.add('blog-post');
+const divEl = document.createElement('div');
+divEl.classList.add('blog-post');
 
 const h3El = document.createElement('h3');
 h3El.textContent = 'Karak Tea Tasting Event';
@@ -34,7 +34,7 @@ h3El.textContent = 'Karak Tea Tasting Event';
 const descEl = document.createElement('p');
 descEl.textContent = 'come and taste our new Karak tea!';
 
-blogPost.append(h3El);
-blogPost.append(descEl);
+divEl.append(h3El);
+divEl.append(descEl);
 
-document.querySelector('.blog-post').append(blogPost);
+document.querySelector('.blog-post').append(divEl);
